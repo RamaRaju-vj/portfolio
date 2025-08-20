@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Experience from "./components/Experience"; // Import the Experience component
+import Footer from "./components/Footer"; // Import the Footer component
 import { ThemeProvider } from "./context/ThemeContext";
 import ParallaxBackground from "./components/ParallaxBackground";
 
@@ -18,6 +19,7 @@ function App() {
         <Projects />
         <Experience /> {/* Add Experience component here */}
         <Contact />
+        <Footer /> {/* Add Footer component here */}
       </div>
     </ThemeProvider>
   );
