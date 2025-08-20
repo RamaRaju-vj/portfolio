@@ -1,104 +1,101 @@
 import React from 'react';
-import { useTheme } from '../context/ThemeContext';
 
 const DevOpsMarquee = () => {
-  const { theme } = useTheme();
-  
   return (
-    <section className={`py-8 px-4 border-b ${
-      theme === 'dark' 
-        ? 'bg-gray-900 border-gray-700' 
-        : 'bg-gray-50 border-gray-200'
-    }`}>
+    <section className="py-4 px-4 bg-black text-white border-b border-gray-700">
       <div className="max-w-7xl mx-auto">
-        {/* Section Title */}
-        <div className="text-center mb-6">
-          <h2 className={`text-2xl font-bold mb-2 ${
-            theme === 'dark' ? 'text-white' : 'text-gray-800'
-          }`}>
-            🚀 DevOps Expertise
-          </h2>
-          <p className={`text-sm ${
-            theme === 'dark' ? 'text-gray-300' : 'text-gray-600'
-          }`}>
-            Master the tools that power modern infrastructure
-          </p>
-        </div>
-        
-        {/* Marquee Container */}
+        {/* Marquee Container - Smaller size */}
         <div className="relative overflow-hidden">
-          {/* First Marquee Row - DevOps Tools */}
-          <div className="mb-6">
+          {/* First Marquee Row - DevOps Tools from Parallax */}
+          <div className="mb-3">
             <div className="flex animate-marquee whitespace-nowrap">
-              <div className="flex items-center space-x-8 text-4xl opacity-80">
-                <img src="/src/assets/docker.png" alt="Docker" className="w-12 h-12" />
-                <img src="/src/assets/kubernetes.png" alt="Kubernetes" className="w-12 h-12" />
-                <img src="/src/assets/terraform.png" alt="Terraform" className="w-12 h-12" />
-                <img src="/src/assets/aws.png" alt="AWS" className="w-12 h-12" />
-                <img src="/src/assets/gcp.png" alt="GCP" className="w-12 h-12" />
-                <img src="/src/assets/jenkins.png" alt="Jenkins" className="w-12 h-12" />
-                <img src="/src/assets/githubactions.png" alt="GitHub Actions" className="w-12 h-12" />
-                <img src="/src/assets/ansible.png" alt="Ansible" className="w-12 h-12" />
-                <img src="/src/assets/packer.png" alt="Packer" className="w-12 h-12" />
-                <img src="/src/assets/go.png" alt="Go" className="w-12 h-12" />
-                <img src="/src/assets/py.png" alt="Python" className="w-12 h-12" />
-                <img src="/src/assets/mongo.png" alt="MongoDB" className="w-12 h-12" />
-                <img src="/src/assets/postgres.png" alt="PostgreSQL" className="w-12 h-12" />
-                <img src="/src/assets/docker.png" alt="Docker" className="w-12 h-12" />
-                <img src="/src/assets/kubernetes.png" alt="Kubernetes" className="w-12 h-12" />
-                <img src="/src/assets/terraform.png" alt="Terraform" className="w-12 h-12" />
-                <img src="/src/assets/aws.png" alt="AWS" className="w-12 h-12" />
-                <img src="/src/assets/gcp.png" alt="GCP" className="w-12 h-12" />
-                <img src="/src/assets/jenkins.png" alt="Jenkins" className="w-12 h-12" />
-                <img src="/src/assets/githubactions.png" alt="GitHub Actions" className="w-12 h-12" />
-                <img src="/src/assets/ansible.png" alt="Ansible" className="w-12 h-12" />
-                <img src="/src/assets/packer.png" alt="Packer" className="w-12 h-12" />
-                <img src="/src/assets/go.png" alt="Go" className="w-12 h-12" />
-                <img src="/src/assets/py.png" alt="Python" className="w-12 h-12" />
-                <img src="/src/assets/mongo.png" alt="MongoDB" className="w-12 h-12" />
-                <img src="/src/assets/postgres.png" alt="PostgreSQL" className="w-12 h-12" />
+              <div className="flex items-center space-x-6 text-2xl opacity-80">
+                <div className="text-orange-500" title="AWS">☁️</div>
+                <div className="text-blue-500" title="GCP">☁️</div>
+                <div className="text-blue-600" title="Azure">☁️</div>
+                <div className="text-blue-600" title="Docker">🐳</div>
+                <div className="text-blue-500" title="Kubernetes">⚓</div>
+                <div className="text-purple-500" title="Network">🌐</div>
+                <div className="text-purple-600" title="Terraform">🏗️</div>
+                <div className="text-red-600" title="Ansible">⚙️</div>
+                <div className="text-blue-400" title="Packer">📦</div>
+                <div className="text-red-500" title="Jenkins">🔧</div>
+                <div className="text-gray-700" title="GitHub Actions">🚀</div>
+                <div className="text-blue-500" title="Golang">🔵</div>
+                <div className="text-yellow-500" title="Python">🐍</div>
+                <div className="text-green-500" title="Shell">💻</div>
+                <div className="text-gray-600" title="Server">🖥️</div>
+                <div className="text-green-500" title="Database">🗄️</div>
+                <div className="text-purple-500" title="Network">🌐</div>
+                <div className="text-orange-500" title="Automation">⚙️</div>
+                <div className="text-red-400" title="Deploy">🚀</div>
+                <div className="text-blue-300" title="Cloud">☁️</div>
+                <div className="text-green-400" title="CLI">💻</div>
+                <div className="text-pink-500" title="Code">💻</div>
+                <div className="text-orange-500" title="AWS">☁️</div>
+                <div className="text-blue-500" title="GCP">☁️</div>
+                <div className="text-blue-600" title="Azure">☁️</div>
+                <div className="text-blue-600" title="Docker">🐳</div>
+                <div className="text-blue-500" title="Kubernetes">⚓</div>
+                <div className="text-purple-500" title="Network">🌐</div>
+                <div className="text-purple-600" title="Terraform">🏗️</div>
+                <div className="text-red-600" title="Ansible">⚙️</div>
+                <div className="text-blue-400" title="Packer">📦</div>
+                <div className="text-red-500" title="Jenkins">🔧</div>
+                <div className="text-gray-500" title="GitHub Actions">🚀</div>
+                <div className="text-blue-500" title="Golang">🔵</div>
+                <div className="text-yellow-500" title="Python">🐍</div>
+                <div className="text-green-500" title="Shell">💻</div>
+                <div className="text-gray-600" title="Server">🖥️</div>
+                <div className="text-green-500" title="Database">🗄️</div>
+                <div className="text-purple-500" title="Network">🌐</div>
+                <div className="text-orange-500" title="Automation">⚙️</div>
+                <div className="text-red-400" title="Deploy">🚀</div>
+                <div className="text-blue-300" title="Cloud">☁️</div>
+                <div className="text-green-400" title="CLI">💻</div>
+                <div className="text-pink-500" title="Code">💻</div>
               </div>
             </div>
           </div>
           
-          {/* Second Marquee Row - Clickable URL */}
-          <div className="mb-6">
+          {/* Second Marquee Row - Clickable URL in Middle */}
+          <div className="mb-3">
             <div className="flex animate-marquee2 whitespace-nowrap">
-              <div className="flex items-center space-x-8 text-lg font-medium">
-                <span className="text-blue-600 dark:text-blue-400">📚</span>
-                <span className="text-gray-700 dark:text-gray-300">Visit My DevOps Documentation</span>
-                <span className="text-blue-600 dark:text-blue-400">🚀</span>
-                <span className="text-gray-700 dark:text-gray-300">Master Kubernetes, Docker, Terraform</span>
-                <span className="text-blue-600 dark:text-blue-400">⚙️</span>
-                <span className="text-gray-700 dark:text-gray-300">CI/CD, Monitoring & More</span>
-                <span className="text-blue-600 dark:text-blue-400">🌐</span>
+              <div className="flex items-center space-x-6 text-sm font-medium">
+                <span className="text-gray-400">📚</span>
+                <span className="text-gray-300">Visit My DevOps Documentation</span>
+                <span className="text-gray-400">🚀</span>
+                <span className="text-gray-300">Master Kubernetes, Docker, Terraform</span>
+                <span className="text-gray-400">⚙️</span>
+                <span className="text-gray-300">CI/CD, Monitoring & More</span>
+                <span className="text-gray-400">🌐</span>
                 <a 
                   href="https://docs.ramaraju-vj.engineer/" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 hover:underline font-bold"
+                  className="text-blue-400 hover:text-blue-300 hover:underline font-bold text-base"
                 >
                   docs.ramaraju-vj.engineer
                 </a>
-                <span className="text-blue-600 dark:text-blue-400">🎯</span>
-                <span className="text-gray-700 dark:text-gray-300">Master DevOps Skills</span>
-                <span className="text-blue-600 dark:text-blue-400">📚</span>
-                <span className="text-gray-700 dark:text-gray-300">Visit My DevOps Documentation</span>
-                <span className="text-blue-600 dark:text-blue-400">🚀</span>
-                <span className="text-gray-700 dark:text-gray-300">Master Kubernetes, Docker, Terraform</span>
-                <span className="text-blue-600 dark:text-blue-400">⚙️</span>
-                <span className="text-gray-700 dark:text-gray-300">CI/CD, Monitoring & More</span>
-                <span className="text-blue-600 dark:text-blue-400">🌐</span>
+                <span className="text-gray-400">🎯</span>
+                <span className="text-gray-300">Master DevOps Skills</span>
+                <span className="text-gray-400">📚</span>
+                <span className="text-gray-300">Visit My DevOps Documentation</span>
+                <span className="text-gray-400">🚀</span>
+                <span className="text-gray-300">Master Kubernetes, Docker, Terraform</span>
+                <span className="text-gray-400">⚙️</span>
+                <span className="text-gray-300">CI/CD, Monitoring & More</span>
+                <span className="text-gray-400">🌐</span>
                 <a 
                   href="https://docs.ramaraju-vj.engineer/" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 hover:underline font-bold"
+                  className="text-blue-400 hover:text-blue-300 hover:underline font-bold text-base"
                 >
                   docs.ramaraju-vj.engineer
                 </a>
-                <span className="text-blue-600 dark:text-blue-400">🎯</span>
-                <span className="text-gray-700 dark:text-gray-300">Master DevOps Skills</span>
+                <span className="text-gray-400">🎯</span>
+                <span className="text-gray-300">Master DevOps Skills</span>
               </div>
             </div>
           </div>
@@ -106,23 +103,23 @@ const DevOpsMarquee = () => {
           {/* Third Marquee Row - Additional Tools */}
           <div>
             <div className="flex animate-marquee whitespace-nowrap">
-              <div className="flex items-center space-x-8 text-4xl opacity-80">
-                <img src="/src/assets/firebase.png" alt="Firebase" className="w-12 h-12" />
-                <img src="/src/assets/node.png" alt="Node.js" className="w-12 h-12" />
-                <img src="/src/assets/react.png" alt="React" className="w-12 h-12" />
-                <img src="/src/assets/tailwind.png" alt="Tailwind CSS" className="w-12 h-12" />
-                <img src="/src/assets/groovy.png" alt="Groovy" className="w-12 h-12" />
-                <img src="/src/assets/postman.png" alt="Postman" className="w-12 h-12" />
-                <img src="/src/assets/mysql.png" alt="MySQL" className="w-12 h-12" />
-                <img src="/src/assets/PG.png" alt="PostgreSQL" className="w-12 h-12" />
-                <img src="/src/assets/firebase.png" alt="Firebase" className="w-12 h-12" />
-                <img src="/src/assets/node.png" alt="Node.js" className="w-12 h-12" />
-                <img src="/src/assets/react.png" alt="React" className="w-12 h-12" />
-                <img src="/src/assets/tailwind.png" alt="Tailwind CSS" className="w-12 h-12" />
-                <img src="/src/assets/groovy.png" alt="Groovy" className="w-12 h-12" />
-                <img src="/src/assets/postman.png" alt="Postman" className="w-12 h-12" />
-                <img src="/src/assets/mysql.png" alt="MySQL" className="w-12 h-12" />
-                <img src="/src/assets/PG.png" alt="PostgreSQL" className="w-12 h-12" />
+              <div className="flex items-center space-x-6 text-2xl opacity-80">
+                <div className="text-orange-400" title="Firebase">🔥</div>
+                <div className="text-green-500" title="Node.js">🟢</div>
+                <div className="text-blue-400" title="React">⚛️</div>
+                <div className="text-cyan-400" title="Tailwind CSS">🎨</div>
+                <div className="text-orange-500" title="Groovy">🍊</div>
+                <div className="text-orange-400" title="Postman">📮</div>
+                <div className="text-blue-500" title="MySQL">🐬</div>
+                <div className="text-blue-600" title="PostgreSQL">🐘</div>
+                <div className="text-orange-400" title="Firebase">🔥</div>
+                <div className="text-green-500" title="Node.js">🟢</div>
+                <div className="text-blue-400" title="React">⚛️</div>
+                <div className="text-cyan-400" title="Tailwind CSS">🎨</div>
+                <div className="text-orange-500" title="Groovy">🍊</div>
+                <div className="text-orange-400" title="Postman">📮</div>
+                <div className="text-blue-500" title="MySQL">🐬</div>
+                <div className="text-blue-600" title="PostgreSQL">🐘</div>
               </div>
             </div>
           </div>

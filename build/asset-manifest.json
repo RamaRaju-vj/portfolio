@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.84debe5d.css",
-    "main.js": "/static/js/main.b7509220.js",
+    "main.css": "/static/css/main.0fe98462.css",
+    "main.js": "/static/js/main.bb8e8add.js",
     "static/media/go.png": "/static/media/go.9fe1aae8e6c541dcde91.png",
     "static/media/restapi.png": "/static/media/restapi.9a0569b699669e0980b4.png",
     "static/media/postgres.png": "/static/media/postgres.1e8160e394640d3799db.png",
@@ -24,11 +24,11 @@
     "static/media/ansible.png": "/static/media/ansible.cde9139acb91879c5628.png",
     "static/media/javascript.png": "/static/media/javascript.1ccd6ef9bb1f9c84ef00.png",
     "index.html": "/index.html",
-    "main.84debe5d.css.map": "/static/css/main.84debe5d.css.map",
-    "main.b7509220.js.map": "/static/js/main.b7509220.js.map"
+    "main.0fe98462.css.map": "/static/css/main.0fe98462.css.map",
+    "main.bb8e8add.js.map": "/static/js/main.bb8e8add.js.map"
   },
   "entrypoints": [
-    "static/css/main.84debe5d.css",
-    "static/js/main.b7509220.js"
+    "static/css/main.0fe98462.css",
+    "static/js/main.bb8e8add.js"
   ]
 }
