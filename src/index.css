@@ -1,0 +1,256 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap');
+
+@layer base {
+    body {
+        @apply font-[Raleway];
+        @apply transition-colors duration-300;
+        @apply text-sm sm:text-base;
+        @apply leading-relaxed;
+    }
+    li {
+        @apply px-4;
+        @apply cursor-pointer
+    }
+    
+    /* Ensure smooth scrolling on all devices */
+    html {
+        scroll-behavior: smooth;
+    }
+    
+    /* Better focus styles for accessibility */
+    *:focus {
+        @apply outline-none ring-2 ring-pink-500 ring-opacity-50;
+    }
+}
+
+@layer utilities {
+    .theme-transition {
+        @apply transition-all duration-300 ease-in-out;
+    }
+    
+    /* Responsive text utilities */
+    .text-responsive-xs {
+        @apply text-xs sm:text-sm md:text-base;
+    }
+    
+    .text-responsive-sm {
+        @apply text-sm sm:text-base md:text-lg;
+    }
+    
+    .text-responsive-base {
+        @apply text-base sm:text-lg md:text-xl;
+    }
+    
+    .text-responsive-lg {
+        @apply text-lg sm:text-xl md:text-2xl;
+    }
+    
+    .text-responsive-xl {
+        @apply text-xl sm:text-2xl md:text-3xl;
+    }
+    
+    .text-responsive-2xl {
+        @apply text-2xl sm:text-3xl md:text-4xl;
+    }
+    
+    /* Responsive spacing utilities */
+    .space-responsive-sm {
+        @apply space-y-2 sm:space-y-3 md:space-y-4;
+    }
+    
+    .space-responsive-md {
+        @apply space-y-4 sm:space-y-6 md:space-y-8;
+    }
+    
+    .space-responsive-lg {
+        @apply space-y-6 sm:space-y-8 md:space-y-12;
+    }
+    
+    /* Responsive padding utilities */
+    .p-responsive-sm {
+        @apply p-2 sm:p-3 md:p-4;
+    }
+    
+    .p-responsive-md {
+        @apply p-4 sm:p-6 md:p-8;
+    }
+    
+    .p-responsive-lg {
+        @apply p-6 sm:p-8 md:p-12;
+    }
+    
+    /* Parallax utilities */
+    .parallax-slow {
+        transform: translateZ(0);
+        will-change: transform;
+    }
+    
+    .parallax-medium {
+        transform: translateZ(0);
+        will-change: transform;
+    }
+    
+    .parallax-fast {
+        transform: translateZ(0);
+        will-change: transform;
+    }
+}
+
+.content-div {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+}
+
+@media (min-width: 640px) {
+    .content-div {
+        height: 250px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .content-div {
+        height: 300px;
+    }
+}
+
+.content-div:hover {
+    background-image: linear-gradient(
+        to right,
+        rgba(112, 157, 255, 0.8),
+        hsla(242, 74%, 61%, 0.8)   
+    )!important;
+}
+
+/* Custom scrollbar for webkit browsers */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    @apply bg-light-card dark:bg-dark-card;
+}
+
+::-webkit-scrollbar-thumb {
+    @apply bg-pink-500 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    @apply bg-pink-600;
+}
+
+/* Touch-friendly button sizes for mobile */
+@media (max-width: 640px) {
+    button, a {
+        min-height: 44px;
+        min-width: 44px;
+    }
+}
+
+/* Parallax animations */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes drift {
+    0%, 100% {
+        transform: translateX(0px) translateY(0px);
+    }
+    25% {
+        transform: translateX(10px) translateY(-10px);
+    }
+    50% {
+        transform: translateX(0px) translateY(-20px);
+    }
+    75% {
+        transform: translateX(-10px) translateY(-10px);
+    }
+}
+
+@keyframes rotate-slow {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes pulse-glow {
+    0%, 100% {
+        opacity: 0.2;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 0.4;
+        transform: scale(1.1);
+    }
+}
+
+/* Floating animation classes */
+.animate-float {
+    animation: float 6s ease-in-out infinite;
+}
+
+.animate-drift {
+    animation: drift 8s ease-in-out infinite;
+}
+
+.animate-rotate-slow {
+    animation: rotate-slow 20s linear infinite;
+}
+
+.animate-pulse-glow {
+    animation: pulse-glow 3s ease-in-out infinite;
+}
+
+/* Parallax depth classes */
+.parallax-depth-1 {
+    transform: translateZ(0);
+}
+
+.parallax-depth-2 {
+    transform: translateZ(0);
+}
+
+.parallax-depth-3 {
+    transform: translateZ(0);
+}
+
+/* Smooth transitions for all elements */
+* {
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+}
+
+/* Enhanced hover effects */
+.hover-lift {
+    transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+}
+
+.hover-lift:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* DevOps-themed gradient backgrounds */
+.bg-devops-gradient {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.bg-cloud-gradient {
+    background: linear-gradient(135deg, #74b9ff 0%, #0984e3 100%);
+}
+
+.bg-infra-gradient {
+    background: linear-gradient(135deg, #fd79a8 0%, #e84393 100%);
+}

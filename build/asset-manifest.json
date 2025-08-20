@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/Ram/static/css/main.90c24162.css",
+    "main.js": "/Ram/static/js/main.b6735dc5.js",
+    "static/media/ed.png": "/Ram/static/media/ed.c17e8f74a5506e7c4e84.png",
+    "static/media/go.png": "/Ram/static/media/go.9fe1aae8e6c541dcde91.png",
+    "static/media/restapi.png": "/Ram/static/media/restapi.9a0569b699669e0980b4.png",
+    "static/media/postgres.png": "/Ram/static/media/postgres.1e8160e394640d3799db.png",
+    "static/media/py.png": "/Ram/static/media/py.27a5d4bf480c5366948d.png",
+    "static/media/githubactions.png": "/Ram/static/media/githubactions.cc79f7d015e1d45238da.png",
+    "static/media/mysql.png": "/Ram/static/media/mysql.67646295cd91e7a3920e.png",
+    "static/media/kubernetes.png": "/Ram/static/media/kubernetes.094539ea474c8d4ec84f.png",
+    "static/media/packer.png": "/Ram/static/media/packer.bf9f1ca3823d378fcf14.png",
+    "static/media/cloudNative.jpeg": "/Ram/static/media/cloudNative.f1308278845a9de82e4e.jpeg",
+    "static/media/microservice.jpeg": "/Ram/static/media/microservice.614b4ad8f058dd83a22f.jpeg",
+    "static/media/aws.png": "/Ram/static/media/aws.316da603b6d42393e022.png",
+    "static/media/node.png": "/Ram/static/media/node.952a9ea986dcfa5229ad.png",
+    "static/media/jenkins.png": "/Ram/static/media/jenkins.fc2abe85d123b727dc7e.png",
+    "static/media/mongo.png": "/Ram/static/media/mongo.2a1528ddc31d4ce8518d.png",
+    "static/media/gcp.png": "/Ram/static/media/gcp.c7c87aec6071662486c2.png",
+    "static/media/postman.png": "/Ram/static/media/postman.33be28486ac1f86fa5ea.png",
+    "static/media/logo.png": "/Ram/static/media/logo.513844bc8a268569b0f9.png",
+    "static/media/ansible.png": "/Ram/static/media/ansible.cde9139acb91879c5628.png",
+    "static/media/javascript.png": "/Ram/static/media/javascript.1ccd6ef9bb1f9c84ef00.png",
+    "index.html": "/Ram/index.html",
+    "main.90c24162.css.map": "/Ram/static/css/main.90c24162.css.map",
+    "main.b6735dc5.js.map": "/Ram/static/js/main.b6735dc5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.90c24162.css",
+    "static/js/main.b6735dc5.js"
+  ]
+}
