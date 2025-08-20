@@ -30,15 +30,15 @@ const Footer = () => {
       isVisible ? 'translate-y-0 opacity-100' : 'translate-y-full opacity-0'
     } ${
       theme === 'dark' 
-        ? 'bg-gray-900 text-white border-gray-700' 
-        : 'bg-white text-gray-800 border-gray-200'
+        ? 'bg-pink-900 text-white border-pink-700' 
+        : 'bg-pink-100 text-pink-900 border-pink-300'
     }`}>
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
           {/* Copyright Section */}
           <div className="text-center sm:text-left">
             <p className="text-sm font-medium">
-              © {currentYear} <span className="font-bold text-blue-600 dark:text-blue-400">RamaRaju VJ</span>. All rights reserved.
+              © {currentYear} <span className="font-bold text-pink-600 dark:text-pink-400">RamaRaju VJ</span>. All rights reserved.
             </p>
           </div>
           
@@ -52,8 +52,8 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 className={`ml-1 font-semibold hover:underline transition-all duration-200 ${
                   theme === 'dark' 
-                    ? 'text-blue-400 hover:text-blue-300' 
-                    : 'text-blue-600 hover:text-blue-700'
+                    ? 'text-pink-300 hover:text-pink-200' 
+                    : 'text-pink-700 hover:text-pink-800'
                 }`}
               >
                 DevOps Documentation
@@ -67,11 +67,11 @@ const Footer = () => {
         
         {/* Mobile Responsive Layout */}
         <div className={`mt-4 pt-4 border-t sm:hidden ${
-          theme === 'dark' ? 'border-gray-600' : 'border-gray-300'
+          theme === 'dark' ? 'border-pink-600' : 'border-pink-300'
         }`}>
           <div className="text-center space-y-2">
             <p className="text-sm font-medium">
-              © {currentYear} <span className="font-bold text-blue-600 dark:text-blue-400">RamaRaju VJ</span>
+              © {currentYear} <span className="font-bold text-pink-600 dark:text-pink-400">RamaRaju VJ</span>
             </p>
             <p className="text-xs opacity-75">
               📚 Visit my{' '}
@@ -81,8 +81,8 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 className={`font-semibold hover:underline ${
                   theme === 'dark' 
-                    ? 'text-blue-400 hover:text-blue-300' 
-                    : 'text-blue-600 hover:text-blue-700'
+                    ? 'text-pink-300 hover:text-pink-200' 
+                    : 'text-pink-700 hover:text-pink-800'
                 }`}
               >
                 DevOps Docs
