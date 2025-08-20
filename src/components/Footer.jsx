@@ -1,23 +1,38 @@
-import React from 'react';
-import { useTheme } from '../context/ThemeContext';
+import React, { useState, useEffect } from 'react';
 
 const Footer = () => {
-  const { theme } = useTheme();
+  const [isVisible, setIsVisible] = useState(false);
   
   const currentYear = new Date().getFullYear();
   
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      const windowHeight = window.innerHeight;
+      const documentHeight = document.documentElement.scrollHeight;
+      
+      // Show footer when user is near the bottom (within 100px)
+      if (scrollTop + windowHeight >= documentHeight - 100) {
+        setIsVisible(true);
+      } else {
+        setIsVisible(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+  
   return (
-    <footer className={`sticky bottom-0 w-full py-4 px-4 shadow-lg transition-colors duration-300 ${
-      theme === 'dark' 
-        ? 'bg-gray-900 text-white border-t border-gray-700' 
-        : 'bg-white text-gray-800 border-t border-gray-200'
+    <footer className={`fixed bottom-0 left-0 right-0 w-full py-4 px-4 bg-black text-white border-t border-gray-800 transition-all duration-500 transform ${
+      isVisible ? 'translate-y-0 opacity-100' : 'translate-y-full opacity-0'
     }`}>
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
           {/* Copyright Section */}
           <div className="text-center sm:text-left">
             <p className="text-sm font-medium">
-              © {currentYear} <span className="font-bold text-blue-600 dark:text-blue-400">RamaRaju VJ</span>. All rights reserved.
+              © {currentYear} <span className="font-bold text-blue-400">RamaRaju VJ</span>. All rights reserved.
             </p>
           </div>
           
@@ -29,11 +44,7 @@ const Footer = () => {
                 href="https://docs.ramaraju-vj.engineer/" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className={`ml-1 font-semibold hover:underline transition-all duration-200 ${
-                  theme === 'dark' 
-                    ? 'text-blue-400 hover:text-blue-300' 
-                    : 'text-blue-700 hover:text-blue-800'
-                }`}
+                className="ml-1 font-semibold text-blue-400 hover:text-blue-300 hover:underline transition-all duration-200"
               >
                 DevOps Documentation
               </a>
@@ -45,22 +56,18 @@ const Footer = () => {
         </div>
         
         {/* Mobile Responsive Layout */}
-        <div className="mt-4 pt-4 border-t border-gray-300 dark:border-gray-600 sm:hidden">
+        <div className="mt-4 pt-4 border-t border-gray-700 sm:hidden">
           <div className="text-center space-y-2">
             <p className="text-sm font-medium">
-              © {currentYear} <span className="font-bold text-blue-600 dark:text-blue-400">RamaRaju VJ</span>
+              © {currentYear} <span className="font-bold text-blue-400">RamaRaju VJ</span>
             </p>
             <p className="text-xs opacity-75">
-              📚 Visit my{' '}
+              �� Visit my{' '}
               <a 
                 href="https://docs.ramaraju-vj.engineer/" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className={`font-semibold hover:underline ${
-                  theme === 'dark' 
-                    ? 'text-blue-400 hover:text-blue-300' 
-                    : 'text-blue-600 hover:text-blue-700'
-                }`}
+                className="font-semibold text-blue-400 hover:text-blue-300 hover:underline"
               >
                 DevOps Docs
               </a>
