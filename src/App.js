@@ -16,7 +16,7 @@ function App() {
         <ParallaxBackground />
         <Navbar />
         <Home />
-        <DevOpsMarquee /> {/* Add DevOpsMarquee component here */}
+        <DevOpsMarquee /> {/* DevOpsMarquee now right below Home */}
         <Skills />
         <Projects />
         <Experience /> {/* Add Experience component here */}
