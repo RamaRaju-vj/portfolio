@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/RamaRaju-vj/portfolio/static/css/main.36c9ebef.css",
+    "main.css": "/RamaRaju-vj/portfolio/static/css/main.a74df2b5.css",
     "main.js": "/RamaRaju-vj/portfolio/static/js/main.2850fa5e.js",
     "static/media/go.png": "/RamaRaju-vj/portfolio/static/media/go.9fe1aae8e6c541dcde91.png",
     "static/media/restapi.png": "/RamaRaju-vj/portfolio/static/media/restapi.9a0569b699669e0980b4.png",
@@ -24,11 +24,11 @@
     "static/media/ansible.png": "/RamaRaju-vj/portfolio/static/media/ansible.cde9139acb91879c5628.png",
     "static/media/javascript.png": "/RamaRaju-vj/portfolio/static/media/javascript.1ccd6ef9bb1f9c84ef00.png",
     "index.html": "/RamaRaju-vj/portfolio/index.html",
-    "main.36c9ebef.css.map": "/RamaRaju-vj/portfolio/static/css/main.36c9ebef.css.map",
+    "main.a74df2b5.css.map": "/RamaRaju-vj/portfolio/static/css/main.a74df2b5.css.map",
     "main.2850fa5e.js.map": "/RamaRaju-vj/portfolio/static/js/main.2850fa5e.js.map"
   },
   "entrypoints": [
-    "static/css/main.36c9ebef.css",
+    "static/css/main.a74df2b5.css",
     "static/js/main.2850fa5e.js"
   ]
 }
