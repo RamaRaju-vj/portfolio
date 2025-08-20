@@ -28,34 +28,6 @@ const Footer = () => {
       isVisible ? 'translate-y-0 opacity-100' : 'translate-y-full opacity-0'
     } bg-black text-white border-gray-800`}>
       <div className="max-w-7xl mx-auto">
-        {/* Marquee Section */}
-        <div className="mb-4 overflow-hidden">
-          <div className="flex animate-marquee whitespace-nowrap">
-            <div className="flex items-center space-x-8 text-sm font-medium text-blue-400">
-              <span>🚀</span>
-              <span>Visit My DevOps Documentation</span>
-              <span>📚</span>
-              <span>Learn Kubernetes, Docker, Terraform</span>
-              <span>⚙️</span>
-              <span>CI/CD, Monitoring & More</span>
-              <span>🌐</span>
-              <span>docs.ramaraju-vj.engineer</span>
-              <span>🎯</span>
-              <span>Master DevOps Skills</span>
-              <span>🚀</span>
-              <span>Visit My DevOps Documentation</span>
-              <span>📚</span>
-              <span>Learn Kubernetes, Docker, Terraform</span>
-              <span>⚙️</span>
-              <span>CI/CD, Monitoring & More</span>
-              <span>🌐</span>
-              <span>docs.ramaraju-vj.engineer</span>
-              <span>🎯</span>
-              <span>Master DevOps Skills</span>
-            </div>
-          </div>
-        </div>
-        
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
           {/* Copyright Section */}
           <div className="text-center sm:text-left">
@@ -90,7 +62,7 @@ const Footer = () => {
               © {currentYear} <span className="font-bold text-blue-400">RamaRaju VJ</span>
             </p>
             <p className="text-xs opacity-75">
-              📚 Visit my{' '}
+              �� Visit my{' '}
               <a 
                 href="https://docs.ramaraju-vj.engineer/" 
                 target="_blank" 
